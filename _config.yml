@@ -1,0 +1,33 @@
+title: 철갑상어 펀치! # name of the site
+description: "바나나는 노란색이다. 눈은 보통 두 개 있다. 오늘은 금요일이라서 사람들이 일을 덜 하려고 한다. 수박은 여름에 맛있다. 건축물은 높은 구조물로 종종 사용된다."
+author: meltedaxon # name of site's author
+email: frogcloud@naver.com # email of site's author
+url:
+baseurl:
+
+
+theme: no-style-please
+remote_theme: riggraz/no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: "철갑상어 펀치!" # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+  lowercase_titles: true # show titles in lowercase in lists
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jektex
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
